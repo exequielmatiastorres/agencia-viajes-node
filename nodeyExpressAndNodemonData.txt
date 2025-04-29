@@ -1,0 +1,39 @@
+NODE: entorno de código abierto, multi-plataforma que permite crear aplicaciones del lado del servidor en javascript.
+
+permite crear api's aplicaciones web e incluso acceder a archivos y leer sus contenidos.
+
+ventajas: 
+1- velocidad y rendimiento, excelente para aplicaciones en tiempo real.
+2- javascript, si ya tienes experiencia en javascript, ahora podras crear aplicaciones fullstack con node sin necesidad de compiladores ni lenguajes extras.
+3- NPM - node package manager, una gran cantidad de paqutes y librerias de código abierto ya listos, entre ellos encontraras subida de archivo, autenticación, enviar mails, template engines, seguridad y mucho más.
+4- funciona en windows, mac y linux.
+5- una gran cantidad de librerias, soporte, documentación, ejemplos, comunidad.
+
+
+////express
+Es el framework web mas popular de node, y es la herramienta sobre la que estan desarrollados otros frameworks como mean, sails, loopback, graphql, yoga y otros.
+caracteristicas de express:
+1. Soporta los diferentes verbos http como son post, get, put, patch, delete en las rutas(routes)
+2. Soporta "vistas" que son los datos mostrados en la pantalla mediante determinadas respuestas (ver video mvc)
+3. Permite la creación de aplicaciones mvc que permiten tener una separación de código.
+4. Soporta a middleware, mediante peticiones que se ejecutan en la tuberia de la petición. - El middleware se utiliza bastante en express, permite acceder a archivos, revisar si un usuario esta autenticado o no, entre otras cosas.
+El middleware se ejecuta en pila, por lo tanto se ejecuta uno y después el otro.
+En algunos casos el middleware lo creas tu (similar a crear tus propias funciones) o también esta disponible en express una gran cantidad de middlewares.
+
+Desventajas:
+1- A diferencia de otros frameworks como django o laravel; express no viene con "baterias incluidas" como puede ser autenticación, roles, orm o generador de modelos, estas piezas usualmente se instalan vía npm. De esta forma solo instalas lo que necesitas en tu aplicación (lo cual puede ser una ventaja)
+
+/////NODEMON
+Nodemon lo que hace es que revisa cambios en los archivos y reinicia el servidor.
+
+Consideraciones deployment
+*Los proyectos de Node y Exepress deberan ser publicados en un servidor que soporte esta plataforma.
+* La base de datos tambien debera publicarse en un servidor ya que para que los usuarios puedan acceder a ella, se necesita que su acceso sea publico.
+* Es necesario realizar algunos ajustes a nuestro proyecto antes de realizar el deployment
+
+
+Variables de entorno
+* Las variables de Entorno te permiten añadir valores para diferentes entornos - desarrollo o producción.
+* Las variables de entorno evitan que valores sensibles sean almacenados en github o que se puedan acceder de forma muy sencilla.
+
+

@@ -1,0 +1,32 @@
+QUE SON?
+1-Son la V del MVC.
+2-Permiten mostrar la parte visual HTML en una aplicación express, debido a que el modelo retorna un objeto (o arreglo) de datos, un template engine permitira acceder a los resultados de una consulta y mostrarlos en pantalla.
+
+
+Características:
+*hay una gran variedad y cada uno tiene su propia sintaxis.
+*usualmente puedes escribir codigo js dentro de html
+*si tienes experiencia en angular, react o vue, usualmente reemplazan estos template engines en una aplicación.
+
+Los mas comunes en node - express.
+pug
+EJS - Embedded javascript
+HBS - handlebars.js
+REACT
+
+se instalan via npm
+
+se habilita en el archivo principal
+//habilitar pug
+app.set('view engine', 'pug')
+
+
+
+//////MVC
+patron de diseño en software que permite la separación de oblicaciones de cada pieza de código en tu aplicación web.
+Enfatiza la separación de la lógica de programación y lo que se muestra en pantalla.
+
+Router: Encargado de registrar todas las url's o endpoints que la aplicación soporta
+
+Si el usuario accede a /productos, el router llama un controlador, que se comunica con el modelo para obtener los datos que son pasados hacia la vista para ser mostrados.
+
